@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+  
+  <title>Interactive pricing component</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+  <main>
+    <section class="page-views">
+      <h2>100k Pageviews</h2>
+    </section>
+
+    <section class="slider-container">
+      
+      <label for="slider-pageviews" aria-label="silder to increase or decrease amount of pageviews"></label>
+      <input type="range" id="slider-pageviews" max="4">
+    </section>
+
+    <section class="price">
+
+      <div class="price-billing-cycle">
+        <h3> $16.00</h3><p id="billing-cycle">/ month</p>
+      </div>
+
+      <div class="billing-toggle">
+        <p>Monthly Billing</p>
+        <label for="month-or-year" aria-label="selects monthly or yearly billing" class="switch">
+        <input type="checkbox" id="month-or-year">
+        <span class="slider round"></span>
+      </label>
+        <p>Yearly Billing <span id="discount"> -25%<span id="full-word">discount</span> </span></p>
+      </div>
+
+    </section>
+
+    <section class="fetures">
+
+      <ul>
+        <li> <img src="./images/icon-check.svg" alt="check icon"> Unlimited websites</li>
+        <li><img src="./images/icon-check.svg" alt="check icon"> 100% data ownership</li>
+        <li><img src="./images/icon-check.svg" alt="check icon"> Email reports</li>
+      </ul>
+
+      <button>Start my trial</button>
+    </section>
+
+  </main>
+
+</body>
+</html>
